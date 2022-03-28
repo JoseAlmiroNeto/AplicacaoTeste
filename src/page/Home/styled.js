@@ -45,21 +45,27 @@ export const ListaSoli = styled.div`
         border: 1px solid #e8e8e8;
         padding-left: 10px;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-        .priority{
-            padding-left: 8pc;
-            padding-top: 2pc;
-
-        }
-
-        .Conatiner-Info{
+        .Conatiner-title{
             display: flex;
             flex-direction: column;
-            width: 30vw;
         }
 
         .title{
             margin: 0px;
+        }
+
+        .dateTime{
+            padding-left: 10px;
+            padding-right: 10px;
+            border-left: 1px solid #e8e8e8;
+            height: 12.3vh;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .btnDone{
