@@ -2,7 +2,6 @@ import React from "react";
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-
 import {AreaFooter} from './styled';
 
 function Footer(){
@@ -13,9 +12,17 @@ function Footer(){
             <div className="copyright">
                 <p>Copyright © 2020 - Taugor Corporation. Todos direitos reservados.</p>
                 <div className="social">
-                    <button className="btnFacebook"><FacebookOutlinedIcon></FacebookOutlinedIcon></button>
-                    <button className="btnInstagram"><InstagramIcon></InstagramIcon></button>
-                    <button className="btnYoutube"><YouTubeIcon></YouTubeIcon></button>
+                    <a href="https://www.facebook.com/taugor/" className="btnFacebook">
+                        <i><FacebookOutlinedIcon color="primary"  /></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/taugorbr/" className="btnInstagram">
+                        <i><InstagramIcon color="primary"  /></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/user/canaltaugor" className="btnYoutube">
+                        <i><YouTubeIcon color="primary"  /></i>
+                    </a>
                 </div>
             </div>
         </AreaFooter>
