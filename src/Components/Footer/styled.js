@@ -33,19 +33,26 @@ export const AreaFooter = styled.div`
 
         .social{
             display: flex;
+            align-items:center;
+            justify-content: center;
             gap: 10px;
 
-            button{
+            a{
                 cursor: pointer;
                 width: 35px;
                 height: 35px;
                 border-radius: 50%;
                 border: 0px;
+                display: flex;
+                align-items:center;
+                justify-content: center;
+                background: white;
             }
 
             .btnFacebook{
+                
                 &:hover{
-                    background-color: #2681c6;
+                    background-color: #00aaff;
                 }
             }
             .btnInstagram{
