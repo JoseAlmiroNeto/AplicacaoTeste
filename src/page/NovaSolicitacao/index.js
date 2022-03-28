@@ -8,6 +8,8 @@ import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import TextField from '@mui/material/TextField';
 import { ContainerPage } from "./styled"
 import { useDados } from '../../context/formContext';
+import Footer from '../../Components/Footer';
+import Button from '@mui/material/Button';
 
 export default function Page () {
     const [text, setText] = useState('')
@@ -26,6 +28,7 @@ export default function Page () {
     })
     
     return (
+        <>
         <ContainerPage>
             <div className="ticketTitle">
              <label className="titulo">Ticket</label>
@@ -110,10 +113,10 @@ export default function Page () {
             <br/>
             
             <div className='Container-btnSend'>
-                <button className='btnSend' onClick={() => {addDados(list)}}>ENVIAR</button>
+                <Button className='btnSend' onClick={() => {addDados(list)}}>ENVIAR</Button>
             </div>
         </div>
         </ContainerPage>
+        <Footer />
+        </>
         );
-    
-}
