@@ -17,12 +17,11 @@ export const AreaHeader = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 45px;
+        gap: 35px;
 
         img{
-            width:210px;
+            width:13vw;
         }
-    
 
         .title {
         font-size: 28px;
@@ -30,35 +29,44 @@ export const AreaHeader = styled.div`
     }
 
     nav{
-        margin-right: 30px;
+        margin-right: 10px;
         
-         ul{
+        ul{
              display: flex;
              justify-content: center;
              align-items: center;
-         }
+             gap: 10px;
+             margin: 0px;
+        }
          
 
-          li{
-              list-style: none;
-              margin-left: 30px;
+        li{
+            list-style: none;
+            margin-left: 30px;
+            
+            a{
+                text-decoration:none;
+                color:white;
+                display:flex;
+                align-items:center;
 
-              .avatar{
-                  width: 30px;
-                  
-              }
+                &:hover{
+                    color:#ff846b;
+                }
+            }
+        }
 
-              a{
-                  text-decoration:none;
-                  color:white;
-                  display:flex;
-                  align-items:center;
+        .profile{
+            .profile-btn{
+                color: white;
 
-                  &:hover{
-                      color:#ff846b;
-                  }
-              }
-          }
+                .profile-btn-icon{
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+
     }
 
 }
